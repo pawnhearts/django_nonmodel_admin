@@ -15,7 +15,7 @@ class FakeModelClass(MediaDefiningClass):
                 "Meta", (), {"proxy": True, "verbose_name": cls.get_verbose_name(), "verbose_name_plural": cls.get_verbose_name()}
             ),
         }
-        return type(f"{cls.get_name()}", (User,), attrs)
+        return type(f"{cls.get_name()}", (User,), attrs)  # noqa
 
 
 class NonModelAdmin(admin.ModelAdmin, metaclass=FakeModelClass):
