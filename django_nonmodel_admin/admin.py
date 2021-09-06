@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.contrib.auth.admin import csrf_protect_m
-from django.db import models
 from django.contrib.auth import get_user_model
 
 from django.forms import MediaDefiningClass
